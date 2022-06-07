@@ -18,7 +18,7 @@
     .project_list_wrap li .project_img span { font-size: 1.9em;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .logo a {
         width: 60px; height: 60px;
     }
@@ -32,7 +32,8 @@
         font-size: 14px;
     }
     .skill_list_wrap ul li {
-        font-size: 28px;
+        font-size: 24px;
+        padding: 15px 0;
     }
     .skill_list_wrap ul li div.skill_bar,
     .skill_bar span  {
