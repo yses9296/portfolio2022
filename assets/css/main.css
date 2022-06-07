@@ -48,6 +48,7 @@
     font-size: 80px; 
     font-weight: bold; 
     text-align: center;
+    transition: all .3s ease-in-out;
 }
 
 .main_wrap article.main_back {
@@ -55,6 +56,11 @@
     margin-left: -495px; 
     color: #999; 
     z-index: 100;
+}
+
+.main_wrap .article_wrap:hover article{
+    transform: scale(1.1);
+    filter: grayscale(0%);
 }
 
 /* profile_section */
@@ -93,7 +99,7 @@
     margin-left: 5%;
 }
 .profile_right .profile_rt_up {
-    width: 100%; height: 80%;
+    width: 100%; height: 75%;
 }
 .profile_right .profile_rt_up h2 {
     color: #252525; 
@@ -109,7 +115,7 @@
 }
 
 .profile_right .profile_rt_dw {
-    width: 100%; height: 20%;
+    width: 100%; height: 25%;
     display: flex; 
     flex-direction: column;
     color: #242424;
@@ -362,8 +368,6 @@ main {position: relative;}
     border: 1px solid #404040;
     color: #252525;    
 }
-
-
 
 @keyframes rotate_animated{
     100% {
