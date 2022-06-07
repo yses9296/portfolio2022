@@ -1,0 +1,69 @@
+/* reset */
+* { 
+    margin: 0; padding: 0;     
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+ul, li, ol {list-style: none;}
+a {
+    text-decoration: none; 
+    cursor: none; 
+    color: #fff;
+}
+img {
+    width: 100%; 
+    display: block;
+}
+body, input, textarea, select, button, table {
+    font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; 
+    font-size: 13px; 
+    line-height: 1.5;
+}
+em, address {font-style: normal;}
+.clearfix::before, .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXONLv1Gothic';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-style: normal;
+}
+
+/* mouseEffect */
+main {
+    cursor: none;
+}
+.cursor {
+    position: absolute;
+    left: 0; top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 9999;
+    background-color: rgba(20, 90, 174, 0.4);
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.3s, opacity 0.2s;
+}
+.cursor.active_blue {
+    opacity: 0.5;
+    transform: scale(3.5);
+    background: rgba(18, 135, 210, 1);
+}
+
+.cursor.active_orange {
+    opacity: 0.7;
+    transform: scale(2);
+    background: orange;
+} 
+
