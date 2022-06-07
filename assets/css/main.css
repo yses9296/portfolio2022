@@ -313,3 +313,65 @@
     font-size: 1em;
     font-weight: 400;
 }
+
+/* animation */
+main {position: relative;}
+.animate p {
+    position: absolute; color: #fff; 
+    background-color: #2424247d;
+    border-radius: 50%;
+    text-align: center;
+    transform-origin: 50% 50%;
+    z-index: 2;
+    transition: all 0.5s linear;
+}
+.animate p:nth-child(1){
+    top: 80px;
+    left: 200px;
+    font-size: 2em;
+    line-height: 120px;
+    width: 120px; height: 120px; 
+    animation: rotate_animated_reverse 6s linear infinite;
+}
+.animate p:nth-child(2){
+    top: 150px;
+    right: 200px;
+    font-size: 1.9em;
+    line-height: 90px;
+    width: 90px; height: 90px; 
+    animation: rotate_animated 6s linear infinite;
+}
+.animate p:nth-child(3){
+    top: 600px;
+    left: 90px;
+    font-size: 1.6em;
+    line-height: 100px;
+    width: 100px; height: 100px; 
+    animation: rotate_animated 6s linear infinite;
+}
+.animate p:nth-child(4){
+    top: 750px;
+    right: 200px;
+    font-size: 2em;
+    line-height: 120px;
+    width: 120px; height: 120px;
+    animation: rotate_animated_reverse 6s linear infinite; 
+}
+.animate p.active {
+    background-color: #fff;
+    border: 1px solid #404040;
+    color: #252525;    
+}
+
+
+
+@keyframes rotate_animated{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate_animated_reverse{
+    100% {
+        transform: rotate(-360deg);
+    }
+}

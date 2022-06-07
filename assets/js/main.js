@@ -24,6 +24,7 @@ $(function(){
 
         if ( scrollTop >= profile_section){
             animate_target.addClass('animamte_fadeInUp');
+            
         }//profile_section scroll
 
         var skill_section = $('#skill').offset().top;
@@ -34,6 +35,7 @@ $(function(){
             
                 $('#skill').css('background', '#252525');
                 $('#project').css('background', '#252525');
+                
 
                 skill_animate.each(function(index){
                     var current = $(this);
@@ -67,10 +69,12 @@ $(function(){
 
         if(scrollTop >= skill_section){
             $('.logo').addClass('active');
+            $('#fp-nav ul li a span').css('background', '#fff');
         }
         else {
             $('.logo').removeClass('active');
-        }//logo scroll
+            $('#fp-nav ul li a span').css('background', '#333');
+        }//rather than skill_section
     })
 
 
@@ -93,7 +97,12 @@ $(function(){
         cursor.removeClass("active_orange");
 
     });
+    $('.animate p').hover(function(){
+        $(this).addClass('active');
+    }, function(){
+        $(this).removeClass("active");
+    });
     
+    //animation
 
-        
 })//document ready
