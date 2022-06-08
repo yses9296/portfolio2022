@@ -1,4 +1,48 @@
 $(function(){
+    // loading
+    var $progress = $('#progress'),
+        $progressBar = $progress.find('.progress_bar'),
+        $progressTest = $progress.find('.progress_text'),
+        timer = setInterval(loadProgress, 1000/60),
+        loaded = 0;
+
+    function loadProgress(){
+        loaded++
+        $progressBar.css({width: loaded+'%'});
+        $progressTest.text(Math.ceil(loaded)+'%')
+
+        if (loaded == 100){
+            clearInterval(timer);
+            
+            $progressBar.add($progressTest).delay(500).animate({opacity:0}, 250, function(){
+                $progress.animate({right: '-100%'}, 500);
+            })
+        }
+    }//loadProgress
+
+    
+    var $animate = $('.animate'),
+        $animate_item = $animate.find('p');
+
+    let window_width = $(window).innerWidth(),
+        item_width,
+        clone_item,
+        times;
+
+    $animate_item.each(function(index, item){
+        var current = $(this);
+
+        item_width =  current.find('span').innerWidth() ;
+        times = window_width / item_width;
+
+        for (let i = 0; i < 5; i++){
+            clone_item = current.find('span').clone();
+            clone_item.appendTo(current);
+        }
+
+    });
+    //main animation
+
     //fullpage-plugin
     $('#fullpage').fullpage({
         autoScrolling: false,
@@ -75,7 +119,8 @@ $(function(){
             $('.logo').removeClass('active');
             $('#fp-nav ul li a span').css('background', '#333');
         }//rather than skill_section
-    })
+
+    })//scroll
 
 
 
@@ -87,22 +132,19 @@ $(function(){
 
     //MouseEffect - Hover Action
     $("article").add('.contact_list_wrap a').hover(function(){
-        cursor.addClass("active_blue");
+        cursor.addClass("active_purple");
     }, function(){
-        cursor.removeClass("active_blue");
-    });
+        cursor.removeClass("active_purple");
+    }); //active_blue
     $(".project_img").add('.logo').hover(function(){
-        cursor.addClass("active_orange");
+        cursor.addClass("active_pink");
     }, function(){
-        cursor.removeClass("active_orange");
-
-    });
+        cursor.removeClass("active_pink");
+    });//active_orange
     $('.animate p').hover(function(){
         $(this).addClass('active');
     }, function(){
         $(this).removeClass("active");
     });
-    
-    //animation
 
 })//document ready

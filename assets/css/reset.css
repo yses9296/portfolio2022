@@ -50,20 +50,20 @@ main {
     height: 30px;
     border-radius: 50%;
     z-index: 9999;
-    background-color: rgba(20, 90, 174, 0.4);
+    background-color: rgba(255, 209, 100, 0.671);
     user-select: none;
     pointer-events: none;
     transition: transform 0.3s, opacity 0.2s;
 }
-.cursor.active_blue {
+.cursor.active_purple {
     opacity: 0.5;
     transform: scale(3.5);
-    background: rgba(18, 135, 210, 1);
+    background: rgb(180, 140, 255);
 }
 
-.cursor.active_orange {
+.cursor.active_pink {
     opacity: 0.7;
     transform: scale(2);
-    background: orange;
+    background: rgb(255, 161, 198);
 } 
 

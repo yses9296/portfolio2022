@@ -17,35 +17,47 @@
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
-    <div class="load"></div>
-    <!-- //page load -->
+
+    <div class="progress" id="progress">
+        <span class="progress_bar"></span>
+        <span class="progress_text">0</span>
+    </div>
+    <!-- //loading animation -->
+
     <div class="cursor"></div>
     <!-- //cursor -->
-
+    
     <div class="logo">
         <a href="#">Eunseo Portfolio</a>
     </div>
     <!-- //logo -->
 
-    <div class="animate">
-        <p>HELLO</p>
-        <p>THIS</p>
-        <p>IS</p>
-        <p>EUNSEO</p>
+    <div class="animate_wrap">
+        <div class="animate">
+            <p class="marquee-l "><span class="bg-1">HELLO</span> </p>
+            <p class="marquee-r "><span class="bg-3">THIS</span> </p>
+            <p class="marquee-l "><span class="bg-2">IS</span> </p>
+            <p class="marquee-l "><span class="bg-1">EUNSEO</span> </p>
+            <p class="marquee-r "><span class="bg-3">HELLO</span> </p>
+            <p class="marquee-l "><span class="bg-1">THIS</span> </p>
+            <p class="marquee-r "><span class="bg-2">IS</span> </p>
+            <p class="marquee-l "><span class="bg-3">EUNSEO</span> </p>
+            <p class="marquee-r "><span class="bg-2">HELLO</span> </p>
+            <p class="marquee-r "><span class="bg-1">THIS</span> </p>
+        </div>
     </div>
-    <!-- animation -->
+    <!-- //animation -->
 
     <main id="fullpage">
 
-        <!-- //animations -->
+       
         <section class="section" id="mainPage">
             <div class="container">
                 <div class="row">
                     <div class="main_wrap wrapper">
                         <div class="article_wrap">
                             <article class="main_front">Hello, This is Eunseo :&#41;</article>
-                            <article class="main_back">Hello, This is Eunseo :&#41;</article>        
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -263,6 +275,8 @@
         <!-- //contact -->
     </main>
     <!-- //main fullpage -->
+
+
 
     <!-- javascript/jQuery -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
