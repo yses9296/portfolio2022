@@ -20,29 +20,6 @@ $(function(){
         }
     }//loadProgress
 
-    
-    var $animate = $('.animate'),
-        $animate_item = $animate.find('p');
-
-    let window_width = $(window).innerWidth(),
-        item_width,
-        clone_item,
-        times;
-
-    $animate_item.each(function(index, item){
-        var current = $(this);
-
-        item_width =  current.find('span').innerWidth() ;
-        times = window_width / item_width;
-
-        for (let i = 0; i < 5; i++){
-            clone_item = current.find('span').clone();
-            clone_item.appendTo(current);
-        }
-
-    });
-    //main animation
-
     //fullpage-plugin
     $('#fullpage').fullpage({
         autoScrolling: false,

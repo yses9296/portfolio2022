@@ -32,32 +32,29 @@
     </div>
     <!-- //logo -->
 
-    <div class="animate_wrap">
-        <div class="animate">
-            <p class="marquee-l "><span class="bg-1">HELLO</span> </p>
-            <p class="marquee-r "><span class="bg-3">THIS</span> </p>
-            <p class="marquee-l "><span class="bg-2">IS</span> </p>
-            <p class="marquee-l "><span class="bg-1">EUNSEO</span> </p>
-            <p class="marquee-r "><span class="bg-3">HELLO</span> </p>
-            <p class="marquee-l "><span class="bg-1">THIS</span> </p>
-            <p class="marquee-r "><span class="bg-2">IS</span> </p>
-            <p class="marquee-l "><span class="bg-3">EUNSEO</span> </p>
-            <p class="marquee-r "><span class="bg-2">HELLO</span> </p>
-            <p class="marquee-r "><span class="bg-1">THIS</span> </p>
-        </div>
-    </div>
-    <!-- //animation -->
-
     <main id="fullpage">
-
-       
+     
         <section class="section" id="mainPage">
             <div class="container">
                 <div class="row">
                     <div class="main_wrap wrapper">
                         <div class="article_wrap">
-                            <article class="main_front">Hello, This is Eunseo :&#41;</article>
-                         </div>
+                            <!-- <article class="main_front">Hello, This is Eunseo :&#41;</article> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+                                <defs>
+                                  <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
+                                    <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
+                                  </path>
+                                  <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_bottom">
+                                    <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="195 250 250" to="555 250 250" repeatCount="indefinite" />
+                                  </path>
+                                </defs>
+                                  <text dy="70" textLength="1220">
+                                    <textPath xlink:href="#textcircle_top">Hello, This is Eunseo</textPath>
+                                    <textPath xlink:href="#textcircle_bottom">Good to See you :&#41;</textPath>
+                                  </text>
+                                </svg>
+                        </div>
                     </div>
                 </div>
             </div>
