@@ -1,11 +1,11 @@
 # portfolio2022
 link: 
-▷  http://yses9296.dothome.co.kr/portfolio/portfolio/index.html
-▷  https://yses9296.github.io/portfolio2022/index.html
+▶  http://yses9296.dothome.co.kr/portfolio/portfolio/index.html <br/>
+▶  https://yses9296.github.io/portfolio2022/index.html
 
 ## Main page
-▶ Loading..
-▶ Rotate Text 
+&#187; Loading.. <br/>
+&#187; Rotate Text 
    - refer: webstorybody.com
 
 ## Profile
