@@ -4,9 +4,9 @@
 
 ## Main page
 - Loading animateion <br/>
--    &#187 refer : Rock's easyweb
+   &#187; refer : Rock's easyweb
 - Rotate Text <br/>
-   &#187 refer : webstorybody.com
+   &#187; refer : webstorybody.com
 
 
 ### ScreenShot
