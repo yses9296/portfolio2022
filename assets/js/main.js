@@ -40,7 +40,8 @@ $(function(){
     $(window).scroll(function(){
         let scrollTop = $(window).scrollTop();
         
-        var profile_section = $('#profile').offset().top - 150;
+        // var profile_section = $('#profile').offset().top - 150;
+        var profile_section = $('#profile').offset().top - $(window).innerHeight()/2;
         var animate_target = $('.profile_rt_up strong');
 
         if ( scrollTop >= profile_section){
@@ -112,16 +113,16 @@ $(function(){
         cursor.addClass("active_purple");
     }, function(){
         cursor.removeClass("active_purple");
-    }); //active_blue
+    }); //active_purple
     $(".project_img").add('.logo').hover(function(){
         cursor.addClass("active_pink");
     }, function(){
         cursor.removeClass("active_pink");
-    });//active_orange
+    });//active_pink
     $('.animate p').hover(function(){
         $(this).addClass('active');
     }, function(){
         $(this).removeClass("active");
-    });
+    });//active class
 
 })//document ready

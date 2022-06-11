@@ -90,6 +90,21 @@
 }
 
 
-@media screen and (max-width: 480px ) {
+@media screen and (max-width: 550px ) {
+    .profile_right .profile_rt_up h2 strong {
+        font-size: 24px;
+    }
+    .skill_wrap, .project_wrap,  .contact_wrap {width: 85%;}
+
+    .skill_list_wrap ul {padding: 0.5em 1em;}
+    .skill_list_wrap ul li {font-size: 16px;}
+    .skill_list_wrap ul li div.skill_bar, .skill_bar span {height: 16px;}
+    .skill_list_wrap ul li span.skill_num {font-size: 12px;}
     
+    .project_list_wrap li .project_desc p {font-size: 1.1em;}
+    .project_list_wrap li .project_img span {font-size: 1em;}
+
+    .contact_list_wrap a { font-size: 1.2em;}
+    .contact_list_wrap a:first-child {margin-left: 0;} 
+    .contact_list_wrap a:last-child {margin-right: 0;}
 }
