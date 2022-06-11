@@ -1,5 +1,5 @@
 $(function(){
-    // loading
+    // loadProgress
     var $progress = $('#progress'),
         $progressBar = $progress.find('.progress_bar'),
         $progressTest = $progress.find('.progress_text'),
@@ -100,7 +100,10 @@ $(function(){
 
     })//scroll
 
-
+    $('.logo a').click(function(e){
+        e.preventDefault();
+        $('html, body').stop().animate({scrollTop: 0}, 500);
+    })
 
     //MouseEffect
     const cursor = $(".cursor");
